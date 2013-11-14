@@ -9,8 +9,9 @@
 return array(
     'basePath'          => dirname(__FILE__) . DIRECTORY_SEPARATOR . '..',
     'defaultController' => 'page/default/show',
-    'language'          => 'ru',
-    'preload'           => array('log', 'bootstrap'),
+   // 'language'          => 'ru',
+	'language'          => 'en_us',
+	'preload'           => array('log', 'bootstrap'),
     'import'            => array(
         'application.components.*',
         'application.modules.user.models.User',

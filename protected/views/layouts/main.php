@@ -22,7 +22,7 @@ $this->widget(
                 'class' => 'bootstrap.widgets.TbMenu',
                 'items' => Menu::getItems('top'),
             ),
-            '<form class="navbar-search pull-left" action=""><input type="text" class="search-query span2" placeholder="Что ищем?"></form>',
+            '<form class="navbar-search pull-left" action=""><input type="text" class="search-query span2" placeholder="search?"></form>',
             array(
                 'class'       => 'bootstrap.widgets.TbMenu',
                 'htmlOptions' => array('class' => 'pull-right'),
@@ -30,12 +30,12 @@ $this->widget(
                     Menu::getAdminItems(),
                     array(
                         array(
-                            'label'  => 'Войти',
+                            'label'  => 'Login in',
                             'url'    => array('/user/account/login'),
                             'visible' => Yii::app()->user->isGuest
                         ),
                         array(
-                            'label'       => 'Выйти',
+                            'label'       => 'Log out',
                             'url'         => array('/user/account/logout'),
                             'visible'     => !Yii::app()->user->isGuest,
                             'htmlOptions' => array('class' => 'btn')
