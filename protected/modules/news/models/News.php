@@ -209,7 +209,7 @@ class News extends CActiveRecord
             if ($imageFile = CUploadedFile::getInstance($this, 'image')) {
                 $uploadPath = $this->getUploadPath();
                 if (!$this->isNewRecord && is_dir($uploadPath)) {
-                    $this->deleteImage($uploadPath); // удаляем старое изображение, если обновляем новость
+                    $this->deleteImage($uploadPath); // 删除旧的图像更新的消息时，
                 }
                 mkdir($uploadPath, 0777);
                 $this->image = pathinfo($imageFile->getName(), PATHINFO_FILENAME) . '.jpg';

@@ -4,13 +4,13 @@
  * @var $this Controller
  */
 $this->breadcrumbs = array(
-    Yii::t('user', 'Пользователи') => array('admin'),
-    Yii::t('user', 'Просмотр пользователя') . ' ' . $model->username,
+    Yii::t('user', 'Members') => array('admin'),
+    Yii::t('user', 'View user') . ' ' . $model->username,
 );
 
 $this->menu[] = array(
     'icon'        => 'filter',
-    'label'       => Yii::t('user', 'Права доступа'),
+    'label'       => Yii::t('user', 'Permissions'),
     'url'         => array('/auth/assignment/view', 'id' => $model->id),
     'linkOptions' => array('target' => '_blank')
 );

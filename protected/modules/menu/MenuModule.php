@@ -9,12 +9,12 @@ class MenuModule extends WebModule
 
     public static function getName()
     {
-        return Yii::t('menu', 'Меню');
+        return Yii::t('menu', 'Menu');
     }
 
     public static function getDescription()
     {
-        return Yii::t('menu', 'Создание и управление ссылками меню навигации');
+        return Yii::t('menu', 'Create and manage your navigation menu');
     }
 
     public static function getIcon()
@@ -25,9 +25,9 @@ class MenuModule extends WebModule
     public function getAdminMenu()
     {
         $menu = array(
-            array('icon' => 'list', 'label' => Yii::t('menu', 'Управление'), 'url' => array('/menu/default/admin')),
-            array('icon' => 'file', 'label' => Yii::t('menu', 'Добавить меню'), 'url' => array('create', 'root' => 1)),
-            array('icon' => 'file', 'label' => Yii::t('menu', 'Добавить пункт'), 'url' => array('create'))
+            array('icon' => 'list', 'label' => Yii::t('menu', 'Management'), 'url' => array('/menu/default/admin')),
+            array('icon' => 'file', 'label' => Yii::t('menu', 'Add menu'), 'url' => array('create', 'root' => 1)),
+            array('icon' => 'file', 'label' => Yii::t('menu', 'Add item'), 'url' => array('create'))
         );
         if (isset(Yii::app()->controller->actionParams['id'])) {
             $menu[] = array(

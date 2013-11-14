@@ -15,6 +15,6 @@
                 </li>
             <?php endforeach;?>
         </ul>
-        <?php echo CHtml::link('Все новости', array('/news'), array('class' => 'pull-right')); ?>
+        <?php echo CHtml::link('All the news', array('/news'), array('class' => 'pull-right')); ?>
     </div>
 </div>

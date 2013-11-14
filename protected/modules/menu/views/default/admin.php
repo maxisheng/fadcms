@@ -4,8 +4,8 @@
  * @var $this Controller
  */
 $this->breadcrumbs = array(
-    Yii::t('menu', 'Меню')        => array('default/admin'),
-    Yii::t('menu', 'Управление'),
+    Yii::t('menu', 'Menu')        => array('default/admin'),
+    Yii::t('menu', 'management'),
 );
 
 Yii::app()->clientScript->registerScript(
@@ -53,12 +53,12 @@ echo CHtml::link(
             ),
             array(
                 'class'                => 'bootstrap.widgets.TbToggleColumn',
-                'checkedButtonLabel'   => Yii::t('global', 'Опубликовано. Скрыть?'),
-                'uncheckedButtonLabel' => Yii::t('global', 'Скрыто. Опубликовтаь?'),
+                'checkedButtonLabel'   => Yii::t('global', 'Posted by. Hide?'),
+                'uncheckedButtonLabel' => Yii::t('global', 'Hidden. Opublikovta?'),
                 'name'                 => 'status',
                 'filter'      => array(
-                    0  => Yii::t('menu', 'Скрыто'),
-                    1  => Yii::t('menu', 'Опубликовано')
+                    0  => Yii::t('menu', 'Click here'),
+                    1  => Yii::t('menu', 'Posted by')
                 ),
                 'htmlOptions' => array('style' => 'width:40px; text-align:center;'),
             ),

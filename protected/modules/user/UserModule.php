@@ -28,12 +28,12 @@ class UserModule extends WebModule
 
     public static function getName()
     {
-        return Yii::t('user', 'Пользователи');
+        return Yii::t('user', 'Members');
     }
 
     public static function getDescription()
     {
-        return Yii::t('user', 'Управление пользователями сайта');
+        return Yii::t('user', 'User Management Site');
     }
 
     public static  function getIcon()
@@ -44,11 +44,11 @@ class UserModule extends WebModule
     public function getSettingLabels()
     {
         return array(
-            'minPasswordLength'        => Yii::t('admin', 'Минимальная длина пароль'),
-            'emailAccountVerification' => Yii::t('admin', 'Включить активацию Email'),
-            'showCaptcha'              => Yii::t('admin', 'Включить Captcha в форме регистрации'),
-            'minCaptchaLength'         => Yii::t('admin', 'Минимальное число символов в Captcha'),
-            'maxCaptchaLength'         => Yii::t('admin', 'Максимальное число символов в Captcha')
+            'minPasswordLength'        => Yii::t('admin', 'The minimum length of the password'),
+            'emailAccountVerification' => Yii::t('admin', 'Enable activation Email'),
+            'showCaptcha'              => Yii::t('admin', 'showCaptcha'),
+            'minCaptchaLength'         => Yii::t('admin', 'The minimum number of characters in the Captcha'),
+            'maxCaptchaLength'         => Yii::t('admin', 'The maximum number of characters Captcha')
         );
     }
 

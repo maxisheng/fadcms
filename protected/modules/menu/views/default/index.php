@@ -4,8 +4,8 @@
  * @var $dataProvider CDataProvider
  */
 $this->breadcrumbs = array(
-    Yii::t('menu', 'Меню')        => array('default/admin'),
-    Yii::t('menu', 'Управление'),
+    Yii::t('menu', 'menu')        => array('default/admin'),
+    Yii::t('menu', 'management'),
 );
 
 $this->widget(

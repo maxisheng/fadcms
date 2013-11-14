@@ -36,7 +36,7 @@ return array (
   'Editing Page' => 'Изменение страницы',
   'General' => 'Основное',
   'Link' => 'Ссылка',
-  'List Pages' => 'Список страниц',
+  'List Pages' => 'List Pages',
   'META Description' => 'META описание',
   'META Keywords' => 'META ключевые слова',
   'Main Page (slug)' => 'Главная страница (ссылка)',

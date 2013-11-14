@@ -22,7 +22,7 @@ $form = $this->beginWidget(
     'bootstrap.widgets.TbButton',
     array(
         'type'     => 'primary',
-        'label'    => Yii::t('menu', 'Искать'),
+        'label'    => Yii::t('menu', 'search'),
     )
 ); ?>
 </div>

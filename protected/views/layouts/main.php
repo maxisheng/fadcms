@@ -68,7 +68,7 @@ $this->widget(
         array(
             'links'     => $this->breadcrumbs,
             'separator' => ' / ',
-            'homeLink'  => CHtml::link('Главная', Yii::app()->getHomeUrl()),
+            'homeLink'  => CHtml::link('Home', Yii::app()->getHomeUrl()),
         )
     ); ?><!-- breadcrumbs -->
     <?php endif?>

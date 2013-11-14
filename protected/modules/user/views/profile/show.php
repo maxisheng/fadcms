@@ -3,9 +3,9 @@
  * @var $user User
  * @var $this Controller
  */
-$this->pageTitle = Yii::t('user', 'Профиль пользователя') . ' ' . CHtml::encode($user->username);
+$this->pageTitle = Yii::t('user', 'Personal Information') . ' ' . CHtml::encode($user->username);
 $this->breadcrumbs = array(
-    Yii::t('user', 'Пользователи') => array('/user/people/index/'),
+    Yii::t('user', 'Members') => array('/user/people/index/'),
     CHtml::encode($user->username),
 );
 ?>
@@ -35,7 +35,7 @@ $this->breadcrumbs = array(
             <?php endif; ?>
             <?php if (!is_null($user->last_visit)): ?>
             <p>
-            <?php echo Yii::t('user', 'Был на сайте') . ' ' . $user->last_visit; ?>
+            <?php echo Yii::t('user', 'Was online') . ' ' . $user->last_visit; ?>
             </p>
             <?php endif; ?>
         </div>

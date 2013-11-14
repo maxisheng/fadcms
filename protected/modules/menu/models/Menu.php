@@ -90,8 +90,8 @@ class Menu extends CActiveRecord
             'statusMain' => array(
                 'class' => 'application.components.behaviors.StatusBehavior',
                 'list'  => array(
-                    self::STATUS_ON  => Yii::t('menu', 'включено'),
-                    self::STATUS_OFF => Yii::t('menu', 'отключено'),
+                    self::STATUS_ON  => Yii::t('menu', 'included'),
+                    self::STATUS_OFF => Yii::t('menu', 'disabled'),
                 )
             ),
             'tree' => array(
@@ -108,17 +108,17 @@ class Menu extends CActiveRecord
     {
         return array(
             'id'             => Yii::t('menu', 'ID'),
-            'root'           => Yii::t('menu', 'Родитель'),
-            'level'          => Yii::t('menu', 'Уровень вложенности'),
-            'code'           => Yii::t('menu', 'Уникальный код меню'),
-            'title'          => Yii::t('menu', 'Заголовок'),
-            'href'           => Yii::t('menu', 'Ссылка'),
-            'access'         => Yii::t('menu', 'Уровень доступа'),
-            'status'         => Yii::t('menu', 'Статус'),
-            'create_time'    => Yii::t('menu', 'Создано'),
-            'update_time'    => Yii::t('menu', 'Изменено'),
-            'create_user_id' => Yii::t('menu', 'Автор'),
-            'update_user_id' => Yii::t('menu', 'Изменил'),
+            'root'           => Yii::t('menu', 'root'),
+            'level'          => Yii::t('menu', 'level'),
+            'code'           => Yii::t('menu', 'code'),
+            'title'          => Yii::t('menu', 'title'),
+            'href'           => Yii::t('menu', 'href'),
+            'access'         => Yii::t('menu', 'access'),
+            'status'         => Yii::t('menu', 'status'),
+            'create_time'    => Yii::t('menu', 'create_time'),
+            'update_time'    => Yii::t('menu', 'update_time'),
+            'create_user_id' => Yii::t('menu', 'create_user_id'),
+            'update_user_id' => Yii::t('menu', 'update_user_id'),
         );
     }
 
@@ -214,7 +214,7 @@ class Menu extends CActiveRecord
         }
         $items = array(
             array(
-                'label' => Yii::t('menu', 'Управление'),
+                'label' => Yii::t('menu', 'Management'),
                 'url'   => '/admin',
                 'items' => array_filter($items)
             )

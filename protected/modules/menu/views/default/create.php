@@ -5,8 +5,8 @@
  * @var $root bool
  */
 $this->breadcrumbs = array(
-	Yii::t('menu', 'Меню') => array('default/admin'),
-	Yii::t('menu', 'Добавление'),
+	Yii::t('menu', 'menu') => array('default/admin'),
+	Yii::t('menu', 'addition'),
 );
 
 echo $this->renderPartial('_form', array('model' => $model, 'root' => $root));
