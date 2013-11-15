@@ -1,3 +1,7 @@
+俄文版fadcms二次发开based on Yii (1.1.13)。
+
+附录：
+
 [Русский README](https://github.com/magefad/yiicms/blob/master/README_RU.md)
 
 Fad Yii Cms (dev)

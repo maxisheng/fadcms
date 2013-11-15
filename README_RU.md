@@ -1,3 +1,8 @@
+俄文版fadcms二次开发开based on Yii (1.1.13)。
+
+附录：
+
+
 Fad Yii Cms (dev)
 ===================
 
