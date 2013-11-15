@@ -16,7 +16,7 @@ $form = $this->beginWidget(
     )
 ); ?>
 
-<p class="alert alert-info"><?php echo Yii::t('user', 'Поля, отмеченные <span class="required">*</span> обязательны для заполнения')?></p>
+<p class="alert alert-info"><?php echo Yii::t('user', 'Fields marked <span class="required"> * </ span> are required')?></p>
 <?php echo $form->errorSummary($model); ?>
 	<div>
 		<?php echo $form->textField($model, 'firstname', array('class' => 'span4', 'placeholder' => $model->getAttributeLabel('firstname'))); ?>

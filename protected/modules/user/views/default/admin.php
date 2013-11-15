@@ -6,7 +6,7 @@
 
 $this->breadcrumbs = array(
     Yii::t('user', 'Members') => array('admin'),
-    Yii::t('user', 'Управление'),
+    Yii::t('user', 'management'),
 );
 
 Yii::app()->clientScript->registerScript(
@@ -26,7 +26,7 @@ $('.search-form form').submit(function(){
 );
 ?>
 <?php echo CHtml::link(
-    Yii::t('user', '<i class="icon-search"></i> Поиск пользователей <span class="caret"></span>'),
+    Yii::t('user', '<i class="icon-search"></i> Search for users <span class="caret"></span>'),
     '#',
     array('class' => 'search-button btn btn-small')
 ) ?>

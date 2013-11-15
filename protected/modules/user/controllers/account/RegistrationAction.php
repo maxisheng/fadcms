@@ -36,20 +36,20 @@ class RegistrationAction extends CAction
                             $message = new YiiMailMessage;
                             $message->view = 'registrationActivateEmail';
                             $message->setBody(array('user' => $user), 'text/html', Yii::app()->charset);
-                            $message->subject = Yii::t('user', 'Регистрация на сайте {site} !', array('{site}' => Yii::app()->name));
+                            $message->subject = Yii::t('user', 'Register on the site {site} !', array('{site}' => Yii::app()->name));
                             $message->addTo($user->email);
                             $message->from = Yii::app()->getModule('admin')->email;
                             Yii::app()->mail->send($message);
 
                             $transaction->commit();
 
-                            Yii::app()->user->setFlash('info', Yii::t('user', 'Учетная запись создана! Подтвердите email адрес следуя по ссылке в почтовом письме!'));
+                            Yii::app()->user->setFlash('info', Yii::t('user', 'Account created! Confirm your email address by following the link in the mail a letter!'));
                             $this->controller->redirect(array('login'));
                         } else {
                             $form->addErrors($user->getErrors());
 
                             Yii::log(
-                                Yii::t('user', "Ошибка при создании  учетной записи!"),
+                                Yii::t('user', "Error creating an account!"),
                                 CLogger::LEVEL_ERROR,
                                 UserModule::$logCategory
                             );

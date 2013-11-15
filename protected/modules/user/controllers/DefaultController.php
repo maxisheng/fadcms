@@ -128,7 +128,7 @@ class DefaultController extends Controller
             $form->setAttributes($_POST['ChangePasswordForm']);
             if ($form->validate() && $model->changePassword($form->password)) {
                 $model->changePassword($form->password);
-                Yii::app()->user->setFlash('success', Yii::t('user', 'Пароль успешно изменен!'));
+                Yii::app()->user->setFlash('success', Yii::t('user', 'Password was successfully changed!'));
                 $this->redirect(array('view', 'id' => $model->id));
             }
         }

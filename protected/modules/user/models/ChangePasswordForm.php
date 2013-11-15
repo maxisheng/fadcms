@@ -17,7 +17,7 @@ class ChangePasswordForm extends CFormModel
                 'password',
                 'compare',
                 'compareAttribute' => 'cPassword',
-                'message'          => Yii::t('user', 'Пароли не совпадают!')
+                'message'          => Yii::t('user', 'Passwords do not match!')
             )
         );
     }
@@ -25,8 +25,8 @@ class ChangePasswordForm extends CFormModel
     public function attributeLabels()
     {
         return array(
-            'password'  => Yii::t('user', 'Новый пароль'),
-            'cPassword' => Yii::t('user', 'Новый пароль еще раз'),
+            'password'  => Yii::t('user', 'The new password'),
+            'cPassword' => Yii::t('user', 'The new password again'),
         );
     }
 }

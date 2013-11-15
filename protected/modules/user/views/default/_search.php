@@ -11,11 +11,11 @@ $form = $this->beginWidget(
         'method' => 'get',
     )
 );
-echo '<p>' . Yii::t('user', 'Используйте символы');?> (<strong>&lt;</strong>,
-<strong>&lt;=</strong>(<?php echo Yii::t('user', 'меньше или равно)'); ?>, <strong>&gt;</strong>,
+echo '<p>' . Yii::t('user', 'use the symbols');?> (<strong>&lt;</strong>,
+<strong>&lt;=</strong>(<?php echo Yii::t('user', 'less or equal)'); ?>, <strong>&gt;</strong>,
 <strong>&gt;=</strong>,
-<strong>&lt;&gt;</strong><?php echo Yii::t('page', '(не равно) или'); ?>
-<strong>=</strong>) <?php echo Yii::t('page', 'в начале строки поиска') . '</p>';
+<strong>&lt;&gt;</strong><?php echo Yii::t('page', '(not equal) or'); ?>
+<strong>=</strong>) <?php echo Yii::t('page', 'at the beginning of the search string') . '</p>';
 ?>
 
 <?php echo $form->textFieldRow($model, 'id', array('class' => 'span5', 'maxlength' => 10)); ?>
@@ -41,7 +41,7 @@ echo '<p>' . Yii::t('user', 'Используйте символы');?> (<strong
     'bootstrap.widgets.TbButton',
     array(
         'type'  => 'primary',
-        'label' => Yii::t('user', 'Поиск'),
+        'label' => Yii::t('user', 'search'),
     )
 ); ?>
 </div>

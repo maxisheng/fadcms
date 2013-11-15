@@ -5,7 +5,7 @@
  */
 $this->breadcrumbs = array(
     Yii::t('user', 'Members') => array('admin'),
-    Yii::t('user', 'Добавить'),
+    Yii::t('user', 'Add'),
 );
 
 echo $this->renderPartial('_form', array('model' => $model));

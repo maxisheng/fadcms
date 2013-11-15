@@ -107,15 +107,15 @@ class User extends CActiveRecord
                 'pattern' => '/^[A-Za-z0-9]{2,50}$/',
                 'message' => Yii::t(
                     'user',
-                    'Неверный формат поля "{attribute}" допустимы только буквы и цифры, от 2 до 20 символов'
+                    'Invalid field format "{attribute}" only letters and numbers from 2 to 20 characters'
                 )
             ),
             array('email', 'email'),
-            array('email', 'unique', 'message' => Yii::t('user', 'Данный email уже используется другим пользователем')),
+            array('email', 'unique', 'message' => Yii::t('user', 'This email is already in use by another user')),
             array(
                 'username',
                 'unique',
-                'message' => Yii::t('user', 'Данный логин уже используется другим пользователем')
+                'message' => Yii::t('user', 'This login is already used by another user')
             ),
             // The following rule is used by search().
             // Please remove those attributes that should not be searched.
@@ -137,9 +137,9 @@ class User extends CActiveRecord
             'statusMain' => array(
                 'class' => 'application.components.behaviors.StatusBehavior',
                 'list' => array(
-                    self::STATUS_BLOCKED    => Yii::t('user', 'Заблокирован'),
-                    self::STATUS_ACTIVE     => Yii::t('user', 'Активен'),
-                    self::STATUS_NOT_ACTIVE => Yii::t('user', 'Не активирован')
+                    self::STATUS_BLOCKED    => Yii::t('user', 'blocked'),
+                    self::STATUS_ACTIVE     => Yii::t('user', 'Most Active'),
+                    self::STATUS_NOT_ACTIVE => Yii::t('user', 'is not activated')
                 )
             ),
             'statusEmailConfirm' => array(
@@ -211,30 +211,30 @@ class User extends CActiveRecord
     {
         return array(
             'id'                => Yii::t('user', 'ID'),
-            'firstname'         => Yii::t('user', 'Имя'),
-            'lastname'          => Yii::t('user', 'Фамилия'),
-            'username'          => Yii::t('user', 'Логин'),
-            'sex'               => Yii::t('user', 'Пол'),
-            'birth_date'        => Yii::t('user', 'День рождения'),
-            'country'           => Yii::t('user', 'Страна'),
-            'city'              => Yii::t('user', 'Город'),
-            'phone'             => Yii::t('user', 'Телефон'),
+            'firstname'         => Yii::t('user', 'Firstname'),
+            'lastname'          => Yii::t('user', 'Lastname'),
+            'username'          => Yii::t('user', 'Username'),
+            'sex'               => Yii::t('user', 'Sex'),
+            'birth_date'        => Yii::t('user', 'Birthdate'),
+            'country'           => Yii::t('user', 'Country'),
+            'city'              => Yii::t('user', 'City'),
+            'phone'             => Yii::t('user', 'Phone'),
             'email'             => Yii::t('user', 'Email'),
-            'password'          => Yii::t('user', 'Пароль'),
-            'salt'              => Yii::t('user', 'Соль'),
-            'status'            => Yii::t('user', 'Статус'),
-            'access_level'      => Yii::t('user', 'Доступ'),
-            'last_visit'        => Yii::t('user', 'Последний визит'),
-            'registration_date' => Yii::t('user', 'Дата регистрации'),
-            'registration_ip'   => Yii::t('user', 'IP регистрации'),
-            'activation_ip'     => Yii::t('user', 'IP активации'),
-            'activate_key'      => Yii::t('user', 'Код активации'),
-            'photo'             => Yii::t('user', 'Фото'),
-            'avatar'            => Yii::t('user', 'Аватар'),
-            'use_gravatar'      => Yii::t('user', 'Граватар'),
-            'email_confirm'     => Yii::t('user', 'Email подтвержден'),
-            'create_time'       => Yii::t('user', 'Дата активации'),
-            'update_time'       => Yii::t('user', 'Дата изменения'),
+            'password'          => Yii::t('user', 'Password'),
+            'salt'              => Yii::t('user', 'Salt'),
+            'status'            => Yii::t('user', 'Status'),
+            'access_level'      => Yii::t('user', 'Access_level'),
+            'last_visit'        => Yii::t('user', 'Last Visit'),
+            'registration_date' => Yii::t('user', 'Registration Date'),
+            'registration_ip'   => Yii::t('user', 'Registration IP'),
+            'activation_ip'     => Yii::t('user', 'Activation IP'),
+            'activate_key'      => Yii::t('user', 'Activate Key'),
+            'photo'             => Yii::t('user', 'Photo'),
+            'avatar'            => Yii::t('user', 'Avatar'),
+            'use_gravatar'      => Yii::t('user', 'Use Gravatar'),
+            'email_confirm'     => Yii::t('user', 'Email Confirm'),
+            'create_time'       => Yii::t('user', 'Create Time'),
+            'update_time'       => Yii::t('user', 'Update Time'),
         );
     }
 
@@ -317,8 +317,8 @@ class User extends CActiveRecord
     public function getAccessLevelsList()
     {
         return array(
-            self::ACCESS_LEVEL_ADMIN => Yii::t('user', 'Администратор'),
-            self::ACCESS_LEVEL_USER  => Yii::t('user', 'Пользователь')
+            self::ACCESS_LEVEL_ADMIN => Yii::t('user', 'administrator'),
+            self::ACCESS_LEVEL_USER  => Yii::t('user', 'user')
         );
     }
 

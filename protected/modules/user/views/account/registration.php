@@ -4,8 +4,8 @@
  * @var $form TbActiveForm
  * @var $this Controller
  */
-$this->pageTitle   = Yii::app()->name . ' - ' . Yii::t('user', 'Регистрация');
-$this->breadcrumbs = array(Yii::t('user', 'Регистрация'));
+$this->pageTitle   = Yii::app()->name . ' - ' . Yii::t('user', 'registration');
+$this->breadcrumbs = array(Yii::t('user', 'registration'));
 $form = $this->beginWidget(
     'bootstrap.widgets.TbActiveForm',
     array(
@@ -20,7 +20,7 @@ $form = $this->beginWidget(
 ); ?>
     <?php echo $form->errorSummary($model); ?>
 <legend>
-    Регистрация
+    registration
 </legend>
 <fieldset>
 <div class="row-fluid control-group">

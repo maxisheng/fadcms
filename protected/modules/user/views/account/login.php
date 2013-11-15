@@ -4,8 +4,8 @@
  * @var $form TbActiveForm
  * @var $this Controller
  */
-$this->pageTitle   = Yii::app()->name . ' - ' . Yii::t('user', 'Вход');
-$this->breadcrumbs = array(Yii::t('user', 'Вход'));
+$this->pageTitle   = Yii::app()->name . ' - ' . Yii::t('user', 'Login');
+$this->breadcrumbs = array(Yii::t('user', 'Login'));
 
 $form = $this->beginWidget(
     'bootstrap.widgets.TbActiveForm',
@@ -34,7 +34,7 @@ $form = $this->beginWidget(
     array(
         'buttonType'  => 'submit',
         'type'        => 'info',
-        'label'       => Yii::t('user', 'Войти'),
+        'label'       => Yii::t('user', 'Login'),
     )
 ); ?>
 <?php $this->widget(
@@ -42,7 +42,7 @@ $form = $this->beginWidget(
     array(
         'type'        => 'warning',
         'url'         => array('registration'),
-        'label'       => Yii::t('user', 'Регистрация'),
+        'label'       => Yii::t('user', 'registration'),
         'htmlOptions' => array('style' => 'float:right')
     )
 );
@@ -50,6 +50,6 @@ $this->endWidget();
 Yii::app()->clientScript->registerCss('login-form', '.auth-service {margin-right: 0.2em;font-size: 12px}');
 ?>
 <div class="span3 offset4 well">
-    <legend><?php echo Yii::t('user', 'Войти с помощью:'); ?></legend>
+    <legend><?php echo Yii::t('user', 'Sign in with:'); ?></legend>
     <?php $this->widget('application.modules.user.extensions.eauth.EAuthWidget', array('action' => 'account/login')); ?>
 </div>

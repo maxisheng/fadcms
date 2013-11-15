@@ -18,6 +18,6 @@
  */
 return array (
   'Integrate social services with site' => 'Настройки интеграции с сервисами социальных сетей',
-  'Social Networks' => 'Социальные сети',
-  'Register link:' => 'Регистрация приложения:',
+  'Social Networks' => 'Social Networks',
+  'Register link:' => 'Registration application:',
 );

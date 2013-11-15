@@ -19,7 +19,7 @@ $form = $this->beginWidget(
         ),
     )
 ); ?>
-<p class="alert alert-info"><?php echo Yii::t('menu', 'Поля, отмеченные <span class="required">*</span> обязательны для заполнения.')?></p>
+<p class="alert alert-info"><?php echo Yii::t('menu', 'Fields marked <span class="required"> * </ span> are required.')?></p>
 <?php echo $form->errorSummary($model); ?>
 <?php if (!$root): ?>
     <?php if ($model->isNewRecord): ?>
