@@ -1,5 +1,5 @@
 <?php
-date_default_timezone_set('Europe/Moscow');
+date_default_timezone_set('Asia/Shanghai');
 
 $yii = dirname(__FILE__) . './yii-1.1.13/framework/yii.php';
 if (!file_exists(dirname(__FILE__) . '/protected/config/db.php')) {
